@@ -164,3 +164,9 @@ ul li:hover {
   cursor: pointer;
   border-radius: 4px;
 }
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
