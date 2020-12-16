@@ -98,6 +98,9 @@ window.onload = () => {
     document.getElementById('price').innerHTML = 0;
     saveCart();
   });
+  if (localStorage.cartList === undefined) {
+    localStorage.cartList = "";
+  }
   document.getElementById('cart__items').innerHTML = localStorage.cartList;
   const cartSaved = document.getElementsByClassName('cart__item');
   for (let index = 0; index < cartSaved.length; index += 1) {
