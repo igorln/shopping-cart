@@ -31,7 +31,7 @@
 }
 
 .item {
-  border: 2px solid blue;
+  border: 2px solid #88A28C;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -52,15 +52,22 @@
 }
 
 .item .item__image {
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .item .item__add {
-  background-color: green;
-  border: 0;
+  background-color: #e7e9ec;
+  border-radius: 3px;
+  border-color: #ADB1B8 #A2A6AC #8D9096;
+  border-style: solid;
+  border-width: 1px;
+  color: black;
+  font-weight: 500;
   cursor: pointer;
-  margin: 0;
-  padding: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 165px;
 }
 
 .cart {
@@ -69,8 +76,91 @@
   flex-flow: column wrap;
 }
 
+.totalPriceText , .cart__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+}
+
 .cart .cart__title {
   flex-basis: 1;
-  font-size: 16pt;
+  font-size: 28px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.cart__item {
+  margin: 1.3vw 0;
+  font-size: 14.5px;
+}
+
+.empty-cart {
+  margin: 1.5vw auto -0.5vw;
+  padding: 0.5vw;
+  width: 18.8vw;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.item__add:hover {
+  background-color: #d0d1d3;
+}
+
+.header {
+  background-color: #131921;
+  color: white;
+  padding: 0.5px 0;
+  margin: -8px -8px 0 -8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.storeName {
+  margin: 11px;
+  text-align: center;
+  color: #e47911;
+}
+
+.nav {
+  background-color: #232f3e;
+  color: white;
+  margin: 0 -8px 12px -8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 16px;
+  padding: 3px 0;
+  margin-top: 0;
+}
+
+ul li {
+  padding: 8px 9px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 1px solid #232f3e;
+  border-radius: 3px;
+}
+
+ul li:hover {
+  border: 1px solid white;
+}
+
+.searchBar {
+  height: 20px;
+  width: 345px;
+  padding: 9px 0 9px 10px;
+  border-radius: 4px;
+}
+
+.searchButton {
+  height: 42px;
+  width: 136px;
+  background-color: #febd69;
+  cursor: pointer;
+  border-radius: 4px;
 }

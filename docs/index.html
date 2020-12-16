@@ -10,13 +10,31 @@
   </head>
 
   <body>
+    <header class="header">
+      <h1 class="storeName">eBuy</h1>
+      <div>
+        <input type="text" class="searchBar" placeholder="Pesquise o que quiser">
+        <input type="submit" value="Pesquisar" class="searchButton">
+      </div>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li>Ofertas do Dia</li>
+        <li>Computadores</li>
+        <li>Celulares</li>
+        <li>Acessórios</li>
+        <li>Mais Vendidos</li>
+        <li>Ideias para Presente</li>
+        <li>Atendimento ao Cliente</li>
+      </ul>
+    </nav>
     <section class="container">
-      <section class="items" id="items">loading...</section>
+      <section class="items" id="items"></section>
       <section class="cart">
         <span class="cart__title">Carrinho de compras</span>
         <button class="empty-cart" id="empty-cart">Esvaziar carrinho</button>
         <ol class="cart__items" id="cart__items"></ol>
-        <span class='total-price'>Preço total: $<span id="price">0</span></span>
+        <span class="totalPriceText">Total: R$<span class="total-price" id="price">0</span></span>
       </section>
     </section>
   </body>
