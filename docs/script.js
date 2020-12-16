@@ -66,7 +66,7 @@ function createProductItemElement({ sku, name, image }) {
 }
 
 const createLoading = () => {
-  const loading = document.createElement('h1');
+  const loading = document.createElement('h2');
   loading.className = 'loading';
   loading.innerHTML = 'loading...';
   document.body.appendChild(loading);
@@ -78,7 +78,8 @@ function createProductItemList(QUERY) {
     .then(result => result.json())
     .then((data) => {
       document.querySelector('.loading').parentNode.removeChild(document.querySelector('.loading'));
-      data.results.forEach((item) => {
+      for (let index = 0; index < 16; index += 1) {
+        const item = data.results[index]
         const features = {
           sku: item.id,
           name: item.title,
@@ -87,8 +88,14 @@ function createProductItemList(QUERY) {
         document
           .getElementById('items')
           .appendChild(createProductItemElement(features));
-      });
+      };
     });
+};
+
+const alerting = () => {
+  document.getElementById('searchBar').value = "";
+  alert(`Obrigado pelo seu interesse, mas no momento o site possui apenas uma página :)
+Caso queira conhecer mais do meu trabalho você pode acessar o meu Github ou me contatar através do LinkedIn, os linkes para eles estão aqui do lado ----->`)
 }
 
 window.onload = () => {
@@ -111,4 +118,6 @@ window.onload = () => {
   } else {
     document.getElementById('price').innerHTML = localStorage.totalPrice;
   }
+  const searchButton = document.getElementById('submitButton')
+  searchButton.addEventListener('click', alerting)
 };

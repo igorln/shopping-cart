@@ -31,7 +31,7 @@
 }
 
 .item {
-  border: 2px solid #88A28C;
+  border: 2px solid #88a28c;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -59,7 +59,7 @@
 .item .item__add {
   background-color: #e7e9ec;
   border-radius: 3px;
-  border-color: #ADB1B8 #A2A6AC #8D9096;
+  border-color: #adb1b8 #a2a6ac #8d9096;
   border-style: solid;
   border-width: 1px;
   color: black;
@@ -76,7 +76,8 @@
   flex-flow: column wrap;
 }
 
-.totalPriceText , .cart__title {
+.totalPriceText,
+.cart__title {
   text-align: center;
   font-weight: 700;
   font-size: 26px;
@@ -169,4 +170,85 @@ ul li:hover {
   display: flex;
   justify-content: space-between;
   width: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .onlyBigScreen {
+    display: none;
+  }
+
+  .searchBar {
+    width: 50%;
+    padding: 3px 0 2px 8px;
+    font-size: 10px;
+  }
+
+  .searchButton {
+    width: 35%;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  nav li {
+    font-size: 12px;
+    text-align: center;
+    padding: 3px 4px;
+  }
+
+  .cart .cart__title {
+    font-size: 4.5vw;
+    margin-top: 8px;
+  }
+
+  .item {
+    width: 23%;
+    height: 165px;
+    margin: 2.5px;
+  }
+
+  .container {
+    display: inline-block;
+  }
+
+  .item .item__title {
+    font-size: 8.3px;
+    padding: 7px 7px 2px;
+  }
+
+  .item .item__add {
+    font-weight: 400;
+    margin: 5px auto;
+    padding: 5px;
+    width: 80%;
+    font-size: 8px;
+  }
+
+  .items {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .empty-cart {
+    font-size: 3vw;
+    width: 35vw;
+  }
+
+  .cart__items {
+    margin: 8px;
+  }
+
+  .cart__item {
+    font-size: 3.2vw;
+  }
+
+  .totalPriceText {
+    font-size: 4vw;
+    margin-top: 2px;
+  }
 }
