@@ -1,13 +1,25 @@
 @font-face {
-  font-family: AmazonEmberLt;
-  src: url("AmazonEmberDisplay_Lt.ttf");
+  font-family: Univers;
+  src: url("fonts/UniversCnRg.woff") format("woff");
+}
 
+@font-face {
+  font-family: AmazonEmberLt;
+  src: url("fonts/AmazonEmberDisplay_Lt.ttf") format("truetype");
+}
+
+@font-face {
   font-family: AmazonEmberRg;
-  src: url("AmazonEmberDisplay_Rg.ttf")
+  src: url("fonts/AmazonEmberDisplay_Rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: AmazonEmberMd;
+  src: url("fonts/AmazonEmberDisplay_Md.ttf") format("truetype");
 }
 
 body {
-  font-family: AmazonEmberLt;
+  font-family: AmazonEmberLt, "Sans-serif";
 }
 
 .top-bar {
@@ -93,6 +105,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 26px;
+  font-family: AmazonEmberRg;
 }
 
 .cart .cart__title {
@@ -134,6 +147,9 @@ body {
   margin: 11px;
   text-align: center;
   color: #e47911;
+  font-family: Univers;
+  cursor: pointer;
+  border: 1px solid #131921;
 }
 
 .nav {
@@ -156,12 +172,12 @@ ul li {
   margin: 5px 0;
   cursor: pointer;
   border: 1px solid #232f3e;
-  border-radius: 3px;
-  font-family: AmazonEmberRg;
+  font-family: AmazonEmberMd;
 }
 
-ul li:hover {
+ul li:hover , .storeName:hover {
   border: 1px solid white;
+  border-radius: 3px;
 }
 
 .searchBar {
@@ -177,6 +193,10 @@ ul li:hover {
   background-color: #febd69;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.searchButton:hover {
+  background-color: #fea942;
 }
 
 .logos {
