@@ -94,8 +94,8 @@ function createProductItemList(QUERY) {
 
 const alerting = () => {
   document.getElementById('searchBar').value = "";
-  alert(`Obrigado pelo seu interesse, mas no momento o site possui apenas uma página :)
-Caso queira conhecer mais do meu trabalho você pode acessar o meu Github ou me contatar através do LinkedIn, os linkes para eles estão aqui do lado ----->`)
+  alert(` Thank you for your interest, but at the moment the site has only one page :)
+  If you want to know more about my work you can access my Github or contact me through LinkedIn, the links for them are here on the right side ------>`);
 }
 
 window.onload = () => {
@@ -118,6 +118,6 @@ window.onload = () => {
   } else {
     document.getElementById('price').innerHTML = localStorage.totalPrice;
   }
-  const searchButton = document.getElementById('submitButton')
-  searchButton.addEventListener('click', alerting)
+  const searchButton = document.getElementById('submitButton');
+  searchButton.addEventListener('click', alerting);
 };

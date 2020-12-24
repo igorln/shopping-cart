@@ -175,7 +175,8 @@ ul li {
   font-family: AmazonEmberMd;
 }
 
-ul li:hover , .storeName:hover {
+ul li:hover,
+.storeName:hover {
   border: 1px solid white;
   border-radius: 3px;
 }
