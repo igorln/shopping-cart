@@ -73,6 +73,7 @@ body {
   flex-grow: 1;
   padding: 10px;
   text-align: center;
+  font-family: AmazonEmberRg;
 }
 
 .item .item__image {
