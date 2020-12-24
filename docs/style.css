@@ -1,3 +1,15 @@
+@font-face {
+  font-family: AmazonEmberLt;
+  src: url("AmazonEmberDisplay_Lt.ttf");
+
+  font-family: AmazonEmberRg;
+  src: url("AmazonEmberDisplay_Rg.ttf")
+}
+
+body {
+  font-family: AmazonEmberLt;
+}
+
 .top-bar {
   align-items: center;
   display: flex;
@@ -145,6 +157,7 @@ ul li {
   cursor: pointer;
   border: 1px solid #232f3e;
   border-radius: 3px;
+  font-family: AmazonEmberRg;
 }
 
 ul li:hover {
