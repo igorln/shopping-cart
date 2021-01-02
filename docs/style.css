@@ -119,6 +119,7 @@ body {
 .cart__item {
   margin: 1.3vw 0;
   font-size: 14.5px;
+  cursor: pointer;
 }
 
 .empty-cart {
@@ -236,14 +237,15 @@ h2 {
   }
 
   .cart .cart__title {
-    font-size: 4.5vw;
+    font-size: 14px;
     margin-top: 8px;
   }
 
   .item {
-    width: 23%;
+    width: 48%;
     height: 165px;
     margin: 2.5px;
+    max-width: 200px;
   }
 
   .container {
@@ -251,7 +253,7 @@ h2 {
   }
 
   .item .item__title {
-    font-size: 8.3px;
+    font-size: 8.4px;
     padding: 7px 7px 2px;
   }
 
@@ -271,7 +273,7 @@ h2 {
   }
 
   .empty-cart {
-    font-size: 3vw;
+    font-size: 6.5px;
     width: 35vw;
   }
 
@@ -280,11 +282,11 @@ h2 {
   }
 
   .cart__item {
-    font-size: 3.2vw;
+    font-size: 7.25px;
   }
 
   .totalPriceText {
-    font-size: 4vw;
+    font-size: 13px;
     margin-top: 2px;
   }
 }

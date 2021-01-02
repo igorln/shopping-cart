@@ -120,4 +120,8 @@ window.onload = () => {
   }
   const searchButton = document.getElementById('submitButton');
   searchButton.addEventListener('click', alerting);
+  const menuItems = document.getElementsByClassName('menu-item');
+  for (let index = 0; index < menuItems.length; index += 1) {
+    menuItems[index].addEventListener('click', alerting);
+  }
 };
