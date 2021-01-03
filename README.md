@@ -1,30 +1,26 @@
-# Boas vindas ao repositório do projeto de Carrinho de Compras!
+# Welcome to the Shopping Cart project repository!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+This is the project to conclude the block 9, JavaScript Asynchronous and Promises, from the [Trybe](https://www.betrybe.com) course.
 
 ---
 
-# Entregáveis
+## Deliverable
 
-Para entregar o seu projeto você deverá criar um Pull Request neste repositório. Este Pull Request deverá conter os arquivos `index.html`, `style.css` e `script.js`, que conterão seu código HTML, CSS e JavaScript, respectivamente. Você pode adicionar outros arquivos se julgar necessário. ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
+To deliver your project you must create a Pull Request in this repository. This Pull Request must contain the files `index.html`, `style.css` and `script.js`, which will contain your HTML, CSS and JavaScript code, respectively. You can add other files if you think it is necessary. ⚠️ It is important that your files have exactly these names! ⚠️
 
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre Git & GitHub sempre que quiser!
+## Project requirements
 
-## Requisitos do projeto
+The following are all the project requirements. Read them carefully and follow exactly what is requested. In particular, **pay attention to the id names that some elements of your project must have**. Failure to comply with a requirement, in whole or in part, will impact your assessment.
 
-A seguir, estão listados todos os requisitos do projeto. Leia-os atentamente e siga à risca o que for pedido. Em particular, **atente-se para os nomes de ids que alguns elementos de seu projeto devem possuir**. O não cumprimento de um requisito, total ou parcialmente, impactará em sua avaliação.
+Your project requirements are automatically evaluated, using the resolution `1366 x 768` (1366 pixels wide by 768 pixels high). Therefore, it is recommended to develop your project using the same resolution, via installation [of this plugin](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en) of `Chrome` to facilitate setting that resolution.
 
-Os requisitos do seu projeto são avaliados automaticamente, sendo utilizada a resolução `1366 x 768` (1366 pixels de largura por 768 pixels de altura). Logo, recomenda-se desenvolver seu projeto usando a mesma resolução, via instalação [deste plugin](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=en) do `Chrome` para facilitar a configuração dessa resolução.
+You are free to add new behaviors to your project, whether in the form of improvements to proposed requirements or new features, **as long as such additional behaviors do not conflict with the proposed requirements**. In other words, you can do more than you ask, but never less. However, keep in mind that **nothing more than what is requested in the requirements will be evaluated**. This is an opportunity for you to exercise your creativity and experiment with the acquired knowledge.
 
-Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na forma de aperfeiçoamentos em requisitos propostos ou novas funcionalidades, **desde que tais comportamentos adicionais não conflitem com os requisitos propostos**. Em outras palavras, você pode fazer mais do que for pedido, mas nunca menos. Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos.
+In this project you will make a **shopping cart** totally dynamic! And the best: consuming data directly from an **API!** That's right. From the acronym _Application Programming Interface_, an API is a point of contact on the internet with a particular service. Through **HTTP requests** to this API it is possible to interact with it in the way that its creator planned it. Here we will use the Free Market API to search for products for sale.
 
-Nesse projeto vocês farão um **carrinho de compras** totalmente dinâmico! E o melhor: consumindo dados diretamente de uma **API!** Isso mesmo. Da sigla em inglês _Application Programming Interface_, uma API é um ponto de contato na internet com determinado serviço. Através de **requisições HTTP** a essa API é possível interagir com ela da forma como quem a criou planejou. Aqui usaremos a API do Mercado Livre para buscarmos produtos à venda.
+Your project should behave similarly to the gif below when finished, **don't worry about replicating the look, the gif just illustrates the behavior**:
 
-Seu projeto deve ter o comportamento parecido com o do gif abaixo quando finalizado, **não se preocupe em replicar o visual, o gif so ilustra o comportamento** :
-
-![Project Gif](./out.gif)
+![Project Gif](./docs/out.gif)
 
 O [manual da API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas) contém muitas informações sobre ela. Utilizaremos alguns dos _endpoints_, e a forma de uso está detalhada no primeiro requisito. Este projeto tem como objetivo:
 
@@ -33,17 +29,24 @@ O [manual da API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/
 
 Seu projeto só será avaliado se estiver passando pelos _checks_ do **CodeClimate**.
 
-### 1. Listagem de produtos
+The [Mercado Livre API manual](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas) contains a lot of information about it. We will use some of the _endpoints_, and the form of use is detailed in the first requirement. This project aims to:
 
-Você deve criar uma listagem de produtos que devem ser consultados através da API do Mercado Livre.
+- Review your knowledge about JavaScript, CSS and HTML;
+- Check your knowledge about asynchronous JavaScript using the free market API.
 
-Você deve utilizar o _endpoint_:
+Your project will only be evaluated if it is going through the _checks_ of ** CodeClimate **.
+
+### 1. Product listing
+
+You must create a list of products to be consulted through the Mercado Livre API.
+
+You must use _endpoint_:
 ```javascript
 "https://api.mercadolibre.com/sites/MLB/search?q=$QUERY"
 ```
-onde `$QUERY` deve ser o valor da sua busca. Para este trabalho, a busca deve ser o termo `computador`.
+where `$QUERY` should be the value of your search. For this work, the search must be the term `computer`.
 
-O retorno desse _endpoint_ será algo no formato json. Por exemplo, se for pesquisado "computador":
+The return of this _endpoint_ will be something in the json format. For example, if "computer" is searched:
 ```json
 {
     "site_id": "MLB",
@@ -231,25 +234,26 @@ O retorno desse _endpoint_ será algo no formato json. Por exemplo, se for pesqu
     ]
 }
 ```
-A lista de produtos que devem ser exibidos é o _array_ `results` no `JSON` acima.
 
-Você **deve** utilizar a função `createProductItemElement(product)` para criar os componentes _HTML_ referentes a um produto.
+The list of products that should be displayed is _array_ `results` in `JSON` above.
 
-Adicione o elemento retornado da função `createProductItemElement(product)` como filho do elemento `<section class="items">`.
+You **must** use the `createProductItemElement (product)` function to create the _HTML_ components for a product.
 
-**Obs:** as variáveis `sku`, no código fornecido, se referem aos campos `id` retornados pela API.
+Add the element returned from the `createProductItemElement (product)` function as a child of the `<section class =" items ">` element.
 
-### 2. Adicione o produto ao carrinho de compras
+**Note:** the variables `sku`, in the code provided, refer to the `id` fields returned by the API.
 
-Cada produto na página _HTML_ possui um botão com o nome `Adicionar ao carrinho!`.
+### 2. Add the product to the shopping cart
 
-Ao clicar nesse botão você deve realizar uma requisição para o _endpoint_:
+Each product on the _HTML_ page has a button with the name `Add to cart!`.
+
+When clicking on this button you must make a request to _endpoint_:
 ```javascript
 "https://api.mercadolibre.com/items/$ItemID"
 ```
-onde `$ItemID` deve ser o valor `id` do item selecionado.
+where `$ItemID` should be the `id` value of the selected item.
 
-Quando colocado o id `MLB1341706310` retorno desse _endpoint_ será algo no formato:
+When put the id `MLB1341706310` return of this _endpoint_ will be something like:
 ```JSON
 {
     "id": "MLB1341706310",
@@ -280,25 +284,26 @@ Quando colocado o id `MLB1341706310` retorno desse _endpoint_ será algo no form
     "catalog_listing": true
 }
 ```
-Preste atenção que o JSON deve conter apenas **um** item.
 
-Você **deve** utilizar a função `createCartItemElement()` para criar os componentes _HTML_ referentes a um item do carrinho.
+Pay attention that JSON should contain only **one** item.
 
-Adicione o elemento retornado da função `createCartItemElement(product)` como filho do elemento `<ol class="cart__items">`.
+You **must** use the `createCartItemElement ()` function to create the _HTML_ components for a cart item.
 
-### 3. Remova o item do carrinho de compras ao clicar nele
+Add the element returned from the `createCartItemElement (product)` function as a child of the `<ol class =" cart__items ">` element.
 
-Ao clicar no **produto no carrinho de compra**, ele deve ser removido da lista.
-Para isso, uma função (já existente) chamada `cartItemClickListener(event)` deve ser implementada com a lógica necessária para realizar a remoção.
+### 3. Remove the item from the shopping cart by clicking on it
 
-### 4. Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página
+When you click on the **product in the shopping cart**, it should be removed from the list.
+For this, a function (already existing) called `cartItemClickListener (event)` must be implemented with the necessary logic to perform the removal.
 
-Ao carregar a página, o estado atual do carrinho de compras deve ser carregado do **LocalStorage**.
-Para que isso funcione, o carrinho de compras deve ser salvo no **LocalStorage**, ou seja, todas as **adições** e **remoções** devem ser abordadas para que a lista atual seja salva.
+### 4. Load the shopping cart through **LocalStorage** when starting the page
 
-### 5. Some o valor total dos itens do carrinho de compras de forma assíncrona
+When loading the page, the current state of the shopping cart must be loaded from **LocalStorage**.
+For this to work, the shopping cart must be saved to **LocalStorage**, that is, all **additions** and **removals** must be addressed in order for the current list to be saved.
 
-Cada vez que se adicionar um item ao carrinho de compras será necessário somar seus valores e apresentá-los na página principal do projeto. Não queremos que essa soma, no entanto, impacte no carregamento da página. Devemos, portanto, fazer essa soma de forma *assíncrona*. Use `async/await` para fazer isso. O elemento que tem como filho o preço total dos itens do carrinho deve ter, **obrigatóriamente**, a classe `total-price`.
+### 5. Add the total value of the shopping cart items asynchronously
+
+Each time an item is added to the shopping cart, it will be necessary to add its values and present them on the main page of the project. We do not want this sum, however, to impact the page load. We must therefore make this sum asynchronously. Use `async / await` to do this. The element whose child is the total price of the items in the cart must have, **mandatorily**, the class `total-price`.
 
 ### 6. Botão para limpar carrinho de compras
 
@@ -309,3 +314,13 @@ Crie um botão para remover todos os itens do carrinho de compras. Ele deve, **o
 Uma requisição à API gasta um tempo e durante ele, ficamos sem saber se está tudo certo ou se algo deu errado.
 Normalmente é utilizada alguma forma para mostrar que a requisição está em andamento.
 Mostre a palavra "loading..." em alguma lugar da página **apenas durante** a requisição à API. O elemento mostrado durante o carregamento da página deve, **obrigatóriamente**, ter a classe `loading`.
+
+### 6. Button to clear shopping cart
+
+Create a button to remove all items from the shopping cart. It must, **must**, have the `empty-cart` class.
+
+### 7. Add a "loading" text during an API request
+
+An API request takes time and during it, we don't know if everything is right or if something went wrong.
+Usually some way is used to show that the request is in progress.
+Show the word "loading ..." somewhere on the page **only during** the API request. The element shown during page loading must, **must**, have the class `loading`.
