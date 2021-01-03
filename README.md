@@ -22,19 +22,12 @@ Your project should behave similarly to the gif below when finished, **don't wor
 
 ![Project Gif](./docs/out.gif)
 
-O [manual da API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas) contém muitas informações sobre ela. Utilizaremos alguns dos _endpoints_, e a forma de uso está detalhada no primeiro requisito. Este projeto tem como objetivo:
-
-- Revisar seu conhecimento acerca de JavaScript, CSS e HTML;
-- Checar o seu conhecimento acerca de JavaScript assíncrono através do uso da API do mercado livre.
-
-Seu projeto só será avaliado se estiver passando pelos _checks_ do **CodeClimate**.
-
 The [Mercado Livre API manual](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas) contains a lot of information about it. We will use some of the _endpoints_, and the form of use is detailed in the first requirement. This project aims to:
 
 - Review your knowledge about JavaScript, CSS and HTML;
 - Check your knowledge about asynchronous JavaScript using the free market API.
 
-Your project will only be evaluated if it is going through the _checks_ of ** CodeClimate **.
+Your project will only be evaluated if it is going through the _checks_ of **CodeClimate**.
 
 ### 1. Product listing
 
@@ -304,16 +297,6 @@ For this to work, the shopping cart must be saved to **LocalStorage**, that is, 
 ### 5. Add the total value of the shopping cart items asynchronously
 
 Each time an item is added to the shopping cart, it will be necessary to add its values and present them on the main page of the project. We do not want this sum, however, to impact the page load. We must therefore make this sum asynchronously. Use `async / await` to do this. The element whose child is the total price of the items in the cart must have, **mandatorily**, the class `total-price`.
-
-### 6. Botão para limpar carrinho de compras
-
-Crie um botão para remover todos os itens do carrinho de compras. Ele deve, **obrigatóriamente**, ter a classe `empty-cart`.
-
-### 7. Adicionar um texto de "loading" durante uma requisição à API
-
-Uma requisição à API gasta um tempo e durante ele, ficamos sem saber se está tudo certo ou se algo deu errado.
-Normalmente é utilizada alguma forma para mostrar que a requisição está em andamento.
-Mostre a palavra "loading..." em alguma lugar da página **apenas durante** a requisição à API. O elemento mostrado durante o carregamento da página deve, **obrigatóriamente**, ter a classe `loading`.
 
 ### 6. Button to clear shopping cart
 
