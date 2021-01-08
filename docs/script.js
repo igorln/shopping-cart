@@ -17,11 +17,17 @@ const saveCart = () => {
   localStorage.setItem('totalPrice', document.getElementById('price').innerHTML);
 };
 
-function totalPrice() {
+async function calcTotalPrice() {
   const cartItem = document.querySelectorAll('.cart__item');
   let result = 0;
-  cartItem.forEach((item) => { result += parseFloat(item.innerHTML.split('$')[1]); });
-  document.getElementById('price').innerText = result.toFixed(2);
+  cartItem.forEach((item) => {
+    result += parseFloat(item.innerHTML.split('$')[1]);
+  });
+  return result;
+}
+
+async function totalPrice() {
+  document.getElementById('price').innerText = (await calcTotalPrice()).toFixed(2);
 }
 
 function cartItemClickListener(event) {
@@ -95,7 +101,7 @@ function createProductItemList(QUERY) {
 const alerting = () => {
   document.getElementById('searchBar').value = "";
   alert(` Thank you for your interest, but at the moment the site has only one page :)
-  If you want to know more about my work you can access my Github or contact me through LinkedIn, the links for them are here on the right side ------>`);
+  If you want to know more about my work you can access my Github or contact me through LinkedIn, the links for them are here in the upper righ-hand corner!`);
 }
 
 window.onload = () => {
