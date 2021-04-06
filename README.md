@@ -1,6 +1,6 @@
 # Welcome to the Shopping Cart project repository!
 
-This project was my first time using a API. It was made using olny HTML, CSS and JavaScript.
+This project was my first time using a API. It was made using only HTML, CSS and JavaScript.
 
 ---
 
