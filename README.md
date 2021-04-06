@@ -48,12 +48,12 @@ After each of the steps, there will be an example of the command to be typed to 
 
 #### 2 - Add the product to the shopping cart
 
-#### 3. Remove the item from the shopping cart by clicking on it
+#### 3 - Remove the item from the shopping cart by clicking on it
 
-#### 4. Load the shopping cart through **LocalStorage** when starting the page
+#### 4 - Load the shopping cart through **LocalStorage** when starting the page
 
-#### 5. Add the total value of the shopping cart items asynchronously
+#### 5 - Add the total value of the shopping cart items asynchronously
 
-#### 6. Button to clear shopping cart
+#### 6 - Button to clear shopping cart
 
-#### 7. Add a "loading" text during an API request
+#### 7 - Add a "loading" text during an API request
